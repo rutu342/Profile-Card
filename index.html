@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patient-profile</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <div class="card" style="width: 40rem; height:12rem">
+        <div class="card-body">
+          <h2 class="card-title">John Doe</h2>
+          <img class="card-img-top" src="doctor-img-two.png" alt="Card image cap">
+          <div class="info">
+          <p class="card-subtitle">Female</p>
+          <p class="card-subtitle-1">24 yrs</p>
+          </div>
+          <h2 class="number">123456</h2>
+          <h6 class="date">09 June 2021,1:00 PM</h6>
+          <div class="inner-card" style="width :38rem;height:5rem">
+          <p class="dr">Dr.Joe Tribbiani</p>
+          <p class="special">General Medicine</p>
+          <div class="vertical"></div>
+          <img class="card-img-bottom" src="th.jpg">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsa aperiam eligendi eius minima nobis a praesentium delectus similique quasi, amet fugit quam cumque sit. Doloribus deserunt eveniet libero minima.</p>
+          </div>
+        </div>
+      </div>
+      <section class="boxes">
+          <div class="box-1" ><input type="button" value="Ward" onclick="ShowAlert()" style="color:white;background-color: blue; border:none;"/></div>
+          <div class="box-2" ><input type="button"  value="Room" ondblclick="ShowMsg()"style="color:white;background-color:magenta;border:none;"/></div>
+          <div class="box-3" id="b-3"><input type="button" value="BedId" onclick="ChangeColor()" style="color:white;background-color:rgb(252, 207, 9); border:none;"/></div>
+          <div class="box-4"><input type="button"  value="Payment" onclick="Insurance()" style="color:white;background-color:rgb(0, 255, 136); border:none;"/></div>
+
+      </section>
+      <script>
+          function ShowAlert()
+          {
+              alert("Ward-2A")
+          }
+          function ShowMsg()
+          {
+              console.log("Premeire-Single");
+          }
+          function Insurance()
+          {
+              alert("Insurance");
+          }
+          function ChangeColor()
+          {
+           document.getElementById('b-3').style.background ='powderblue';
+          }
+      </script>
+      </body>
+      </html>
+      
